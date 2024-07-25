@@ -25,6 +25,12 @@
             text-align: center;
         }
 
+        header img {
+            max-width: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -50,6 +56,23 @@
             margin-top: 20px;
         }
 
+        .glowing-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+        }
+
+        .glowing-button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 30px rgba(0, 86, 179, 0.8);
+        }
+
         footer {
             width: 100%;
             background-color: #333;
@@ -63,6 +86,7 @@
 </head>
 <body>
     <header>
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo">
         <h1>{{ site.title }}</h1>
         <nav>
             <ul>
