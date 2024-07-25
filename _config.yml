@@ -1,3 +1,10 @@
-theme: jekyll-theme-minimal
+theme: Master Thesis Website
 title: Akshay's Master Thesis homepage
 description: Bookmark this to keep an eye on my Thesis updates!
+
+
+
+# Include the following if you have `_pages` directory.
+collections:
+  pages:
+    output: true
