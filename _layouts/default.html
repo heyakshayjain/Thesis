@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
             background-color: #f4f4f4;
         }
@@ -21,16 +23,17 @@
             width: 100%;
             background-color: #333;
             color: #fff;
-            padding: 1rem 0;
+            padding: 1rem;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header img {
-            max-width: 150px; /* Increase this value to make the logo larger */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 150px; /* Adjust this value based on your logo size */
+            height: auto;
             margin-right: 10px;
         }
 
@@ -50,6 +53,7 @@
         }
 
         .container {
+            flex: 1;
             width: 100%;
             max-width: 800px;
             padding: 20px;
@@ -59,10 +63,10 @@
             margin-top: 20px;
         }
 
-        .glowing-button {
+        .button, .glowing-button {
             display: inline-block;
             padding: 10px 20px;
-            margin: 20px 0;
+            margin: 10px;
             text-decoration: none;
             color: #fff;
             background-color: #007bff;
@@ -71,7 +75,7 @@
             box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
         }
 
-        .glowing-button:hover {
+        .button:hover, .glowing-button:hover {
             background-color: #0056b3;
             box-shadow: 0 0 30px rgba(0, 86, 179, 0.8);
         }
